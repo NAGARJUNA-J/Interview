@@ -1,0 +1,36 @@
+
+<div class="card">
+    <div class="card-body">
+      
+    </div>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <img src="{{profileData?.avatar_url}}" class="rounded mx-auto d-block" style="width: 200px;height: 210px;">
+                <br>
+                <h6>First Name Last Name:{{profileData?.name}}</h6>
+                <h5>{{profileData?.login}}</h5>
+              </div>
+          <div class="col">
+            {{profileData?.public_repos}}<br>
+            <h3>Public Repo</h3>
+          </div>
+          <div class="col">
+            {{profileData?.public_gists}}
+            <h3>Public Gists</h3>
+          </div>
+          <div class="col">
+            {{profileData?.followers}}
+            <h3>followers</h3>
+          </div>
+          <div class="col">
+            {{profileData?.following}}
+            <h3>following</h3>
+          </div>
+          <div>
+            Bio:{{profileData?.bio}}
+        </div>
+        </div>
+        
+      </div>
+  </div>

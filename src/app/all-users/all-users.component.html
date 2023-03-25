@@ -1,0 +1,15 @@
+<h4>Home Page</h4>
+<div *ngFor="let user of allUsers" class="grid">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <img src="{{user.avatar_url}}" class="rounded mx-auto d-block" style="width: 100px;height: 110px;">
+        <h6 class="card-subtitle mb-2 text-body-secondary">First Name Last Name</h6>
+        <p class="card-text">User Name :-{{user.login}}</p>
+        <button type="button" class="btn btn-primary" (click)="gotoViewProfile(user.login)">View Profile</button>
+        
+      </div>
+    </div>
+  
+  </div>
+  
+  
