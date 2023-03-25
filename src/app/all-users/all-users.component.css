@@ -1,11 +1,13 @@
 
     
 .grid{
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
+ 
+    padding: 1% 10% 4% 7.5%;
+    display: grid;
 
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
+    grid-template-columns: repeat(4, 0fr);
+    gap:20px
+
+
 
 }
